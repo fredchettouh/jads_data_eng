@@ -1,0 +1,28 @@
+body{
+	height: 700px;
+	background-color: #27242b;
+}
+.recording{
+	text-align: :center;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100%;
+}
+.btn{
+	margin-left: 5px;
+}
+
+.form{
+	display: inline;
+}
+
+a{
+	color:white;
+	margin-top: 10px;
+}
+
+.link{
+	text-align: center;
+}
+

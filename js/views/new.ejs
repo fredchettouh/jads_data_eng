@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Simple Recorder.js demo with record, stop and pause</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheets/recording.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/recording.css">
+
+ </head>
+ <body>
+    <div class='container recording'>
+    <img src="https://i.ibb.co/MD2Ctx1/logo.png" alt="logo" border="0">
+      <div class= control>
+
+        <div id="controls">
+         <button class="btn btn-info btn-lg" id="recordButton">Record</button>
+         <button class="btn btn-info btn-lg" id="pauseButton" disabled>Pause</button>
+         <button class="btn btn-info btn-lg" id="stopButton" disabled>Stop</button>
+         <form class='form' action="/recordings">
+          <button type='submit' class="btn btn-info btn-lg" id="resultsButton" disabled>View Results</button>
+        </form>
+        </div>
+        
+      </div>
+
+
+    
+    </div>
+    <div class='container link'>
+      <a href="/recordings"> go to home page</a>
+    </div>
+
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+  <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+  <script src="/js/app.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ </body>
+</html>

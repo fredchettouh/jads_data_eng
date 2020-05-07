@@ -1,0 +1,16 @@
+body{
+	background:black;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+}
+}
+.container{
+	text-align:center;
+	resize: vertical;
+  	overflow: auto;
+}
+h1{
+	color:white;
+	margin: auto;
+}

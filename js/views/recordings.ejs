@@ -1,0 +1,73 @@
+<%include partials/header.ejs%>
+
+
+<!--container for the body -->
+<div class='container'>
+    
+    <!--jumbotron for the header -->
+    <header class="jumbotron">
+            <div class='container'>
+            <h1>Welcome to your AVOICE Profile</h1>
+             <p>View all your past searches below</p>
+            <p>
+                <a class='btn btn-primary btn-lg' href="recordings/new">Do a new search</a>
+            </p>
+        </div>
+    </header>
+    <!--jumbotron for the header -->
+    
+    <!--Rows for the campgrounds-->
+
+    <% response.forEach(function(resonse){%>
+        <div>
+            <hr>
+        </div>
+
+        <div class='row' style="display:flex; flex-wrap:wrap;" >
+            
+            
+                <%resonse.newsApiResponse.articles.forEach(function(article){ %>
+                    <div class='col-md-3 col-sm-6'>
+                        <div class='thumbnail' style='text-align:center;' >
+                        <img src=<%=article.urlToImage%>>
+                            <div class='caption'>
+                                 <h4><%=article.source.name%></h4>
+                            </div>
+                             <div class='caption'>
+                             <stong>Headline:</stong> <em><%=article.title%></em>
+                            </div>
+                            <p>
+                             <a href=<%=article.url%> class='btn btn-primary'>To article</a>
+                            </p>
+                        </div>
+                    </div>
+                <% });%>
+        </div>
+    <%});%>
+        
+        
+</div>
+
+    
+<a href="https://fullstack-bootcamp-fredchettouh.c9users.io/"></a>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<h1>See all your recordings here</h1>
+<div class=container>
+	<% if(user){%>
+		<%response[0].newsApiResponse.articles.forEach(function(article){ %>
+			<div>
+			<%=article.title%>
+			</div>
+		 <%}); %>
+	<%}%>
+</div> -->

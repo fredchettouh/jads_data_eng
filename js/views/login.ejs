@@ -1,0 +1,31 @@
+<%include partials/header.ejs%>
+
+
+<div class='container credentials'>
+    <div class='row'>
+        <h1 class='signup'>Please Login </h1>
+        
+        <div class='rwd-form'>
+
+            <form action='/login' method="POST">
+                <div class='form-group'>
+                    <label for ='username'>User Name</label>
+                    <input type='text' class='form-control' name='username'>
+                </div>
+                <div class='form-group'>
+                    <label for ='password'>Password</label>
+                    <input type='text' class='form-control' name='password'>
+                </div>
+                  <div class='form-group'>
+                    <button class= 'btn btn-md btn-primary btn-block'>Login</button>
+                </div>
+                <hr>
+                <div>
+                <span>Not a member yet? </span><a href='/register'>Sign Up Now!</a>
+                </div>
+                <hr>
+                <a href='/'>back</a>
+            </form>
+        </div>
+    </div>
+</div>
